@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.theme.default.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./owlcarousel/owl.carousel.min.js"></script>
+    <!-- owl carousel -->
+
+    <link rel="stylesheet" href="./icon/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./javascript.js">
+ 
+    <!-- cách làm -->
+    <!-- tải filder git về -->
+    <!-- giải nén copy folder owlcausel ra ngoài cùng cấp với html -->
+    <!-- link css và js-->
+    <!-- thêm assets vào href -->
+    <!-- gg tải thư viện jquery hoặc copy link từ gg -->
+    <!-- owl-carousel vào thẻ cha -->
+</head>
+<body>
+
+    <!-- mỗi nội dung là một section -->
+    <!-- ảnh full hết màn hình, trên figma chỉ là mẫu -->
+    <!-- chữ trên ảnh bằng mới container -->
+    <!-- container chỉ dùng để đặt chiều ngang -->
+    <!-- row luôn đi với col col-12 bla bla -->
+    <!-- ưu tiên sắp xếp đúng vị trí trước -->
+    <!-- ảnh png thì làm mờ/đậm bằng cách dùng background-color: rgba(màu) -->
+    <!-- dùng row col col-bla có thể dùng cho bất cứ thành phần nào như navbar bla bla -->
+    <!-- icon có thể dùng after-->
+    <!-- :after có thể dùng content:unset để ẩn nội dung -->
+    <!-- dùng thẻ chứa kích thước tối đa -->
+    <div id="body">
+        <header>
+            <div class="row flex-1">
+                <div class="col col-25">
+                    <div class="header-left">
+                        <img src="./img/Subtract.png" alt="">
+                        <span> TripGuide</span>
+                    </div>
+                </div>
+                <div class="col col-75">
+                    <div class="header-right">
+                        <div class="country">
+                            <span>USD</span>
+                            <img src="./img/flag-of-the-united-states-computer-icons-usa-gerb-24f7b05b1b2bdd5109fe660fbe8a9c83 1.png" alt="">
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        <div class="user">
+                            <img src="./img/user.png" alt="">
+                            <span>Delowar</span>
+                            <i class="fa-sharp fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- baner -->
+            <section class="baner">
+                <div class="baner-caption">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col col-42">
+                                <h2>
+                                    Book With Us <br>
+                                    And Enjoy your <br>
+                                    Journey !
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- form -->
+            <section class="form">
+                <div class="container">
+                    <div class="form-search">
+                        <div class="row">
+                            <div class="col col-80 col-m-100 col-s-100">
+                                <div class="form-left">
+                                    <div class="form-left-top">
+                                        <div class="row">
+                                            <div class="col col-50 col-m-60  col-st-100">
+                                                <div class="traffic">
+                                                    <span>
+                                                        <i class="fa-solid fa-bed"></i>
+                                                        <h4>
+                                                            Hotel
+                                                        </h4>
+                                                    </span>
+                                                    <span>
+                                                        <i class="fa-solid fa-plane-departure"></i>
+                                                        <h4>
+                                                            Flight
+                                                        </h4>
+                                                    </span>
+                                                    <span>
+                                                        <i class="fa-solid fa-car"></i>
+                                                        <h4>
+                                                            Car Rental
+                                                        </h4>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col col-50 col-m-40 col-st-100">
+                                                <div class="booking">
+                                                    <span>
+                                                        <h4>
+                                                            Round Trip
+                                                        </h4>
+                                                        <i class="fa-solid fa-angle-down"></i>
+                                                    </span>
+                                                    <span>
+                                                        <h4>
+                                                            1 passenger
+                                                        </h4>
+                                                        <i class="fa-solid fa-angle-down"></i>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="form-left-bot">
+                                        <div class="row small-margin">
+                                            <div class="col col-40 small-gutter col-st-100 col-s-100">
+                                                <div class="location">
+                                                    <label for="location">Location</label>
+                                                    <input type="text" id="location" placeholder="Where are you from?">
+                                                </div>
+                                            </div>
+                                            <div class="col col-30 small-gutter col-st-50 col-s-50">
+                                                <div class="location">
+                                                    <img src="./img/arrow.png" alt="">
+                                                    <label for="location">Checkin</label>
+                                                    <input type="text" id="location" placeholder="Add date">
+                                                    
+                                                </div>
+                                            </div> 
+                                            <div class="col col-30 small-gutter col-st-50 col-s-50">
+                                                <div class="location">
+                                                    <img src="./img/arrow.png" alt="">
+                                                    <label for="location">Checkout</label>
+                                                    <input type="text" id="location" placeholder="Add date">
+                                                </div>
+                                            </div>
+
+                                            <!-- mobile small-tablet -->
+                                            <div class="col small-gutter col-st-100 none-in-pc col-s-100">
+                                                <div class="location">
+                                                    <label for="location">Passenger</label>
+                                                    <input type="text" id="location" placeholder="Add passenger">
+                                                </div>
+                                            </div>                                           
+                                            <!-- mobile small-tablet -->
+                                            
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-20 col-m-100 col-s-100">
+                                <div class="form-right">
+                                    <button>
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- search place -->
+            <section class="search-place">
+                <div class="container">
+                    <h2 class="heading">Search a best place in the world</h2>
+                    <p class="content">
+                        Whether you’re looking for places for a vacation. We are here to Guide you <br>
+                        about the details you need to check in and ease your trips in advance
+                    </p>
+                    <div class="search-place-grid">
+                        <div class="search-place-item margin-auto-tablet">
+                            <img src="./img/search-place1.png" alt="">
+                            <h4>Batu, East Java</h4>
+                            <p>86 Destinations</p>
+                        </div>
+
+                        <div class="search-place-item margin-auto-tablet">
+                            <img src="./img/search-place2.png" alt="">
+                            <h4>Kuta</h4>
+                            <p>86 Destinations</p>
+                        </div>
+
+                        <div class="search-place-item margin-auto-tablet">
+                            <img src="./img/search-place3.png" alt="">
+                            <h4>Surabaya, East Java</h4>
+                            <p>86 Destinations</p>
+                        </div>
+
+                        <div class="search-place-item margin-auto-tablet">
+                            <img src="./img/search-place4.png" alt="">
+                            <h4>Malang, East Java</h4>
+                            <p>86 Destinations</p>
+                        </div>
+
+                        <div class="search-place-item margin-auto-tablet">
+                            <img src="./img/search-place1.png" alt="">
+                            <h4>Batu, East Java</h4>
+                            <p>86 Destinations</p>
+                        </div>
+
+                        <div class="search-place-item margin-auto-tablet">
+                            <img src="./img/search-place2.png" alt="">
+                            <h4>Kuta</h4>
+                            <p>86 Destinations</p>
+                        </div>
+
+                        <div class="search-place-item margin-auto-tablet">
+                            <img src="./img/search-place3.png" alt="">
+                            <h4>Surabaya, East Java</h4>
+                            <p>86 Destinations</p>
+                        </div>
+
+                        <div class="search-place-item margin-auto-tablet">
+                            <img src="./img/search-place4.png" alt="">
+                            <h4>Malang, East Java</h4>
+                            <p>86 Destinations</p>
+                        </div>
+                    </div>
+                </div>
+            
+            </section>
+            <!-- feature destination -->
+            <section class="feature">
+                <div class="container">
+                    <div class="feature-heading">
+                        <h2>
+                            Featured Destinations
+                        </h2>
+                        <p>
+                            Popular destinations open to visitors from Indonesia
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col col-75 col-m-100 col-s-100">
+                            <div class="feature-left">
+                                <div class="row">
+                                    <div class="col col-100 col-s-100">
+                                        <div class="feature-img-l">
+                                            <div>
+                                                <span class="feature-num-l">3.5</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="feature-place-l">Barcelona Tour</h4>
+                                                <div class="feature-active-l">
+                                                    <img src="./img/feature-user.png" alt="">
+                                                    <h4>196 actives</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                    <div class="col col-50 col-s-100 medium-img1">
+                                        <div class="feature-img-m">
+                                            <div>
+                                                <span class="feature-num-m">3.5</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="feature-place-m">London, United State</h4>
+                                                <div class="feature-active-m">
+                                                    <img src="./img/feature-user.png" alt="">
+                                                    <h4>196 actives</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-50 col-s-100 medium-img2">
+                                        <div class="feature-img-m">
+                                            <div>
+                                                <span class="feature-num-m">3.5</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="feature-place-m">London, United State</h4>
+                                                <div class="feature-active-m">
+                                                    <img src="./img/feature-user.png" alt="">
+                                                    <h4>196 actives</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-25 col-m-100 col-s-100">
+                            <div class="feature-right">
+                                <div class="row">
+                                    <div class="col col-100 small-img1 col-m-33 col-s-100">
+                                        <div class="feature-img-s">
+                                            <div>
+                                                <span class="feature-num-s">3.5</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="feature-place-s">Australia Tour</h4>
+                                                <div class="feature-active-s">
+                                                    <img src="./img/feature-user.png" alt="">
+                                                    <h4>196 actives</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-100 small-img2 col-m-33 col-s-100">
+                                        <div class="feature-img-s">
+                                            <div>
+                                                <span class="feature-num-s">3.5</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="feature-place-s">Australia Tour</h4>
+                                                <div class="feature-active-s">
+                                                    <img src="./img/feature-user.png" alt="">
+                                                    <h4>196 actives</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-100 small-img3 col-m-33 col-s-100">
+                                        <div class="feature-img-s">
+                                            <div>
+                                                <span class="feature-num-s">3.5</span>
+                                            </div>
+                                            <div>
+                                                <h4 class="feature-place-s">Australia Tour</h4>
+                                                <div class="feature-active-s">
+                                                    <img src="./img/feature-user.png" alt="">
+                                                    <h4>196 actives</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- top tour -->
+            <section class="top-tour">
+                <div class="container">
+                    <div class="feature-heading">
+                        <h2>
+                            Top Tour
+                        </h2>
+                        <p>
+                            Keep calm & travel ona
+                        </p>
+                        <span class="top-tour-icon">
+                            <span href="#"><i class="fa-solid fa-angle-left"></i></span>
+                            <span href="#"><i class="fa-solid fa-angle-right"></i></span>
+                        </span>
+                    </div>
+                    <!-- dang lam toi day -->
+                    <div class="row ">
+                        <div class="col col-33 col-st-75 margin-auto-mobile col-s-100 ">
+                            <div class="tour tour-img1">
+                                <div class="tour-top">
+                                    <span>Japan</span>
+                                </div>
+                                <div class="tour-bot">
+                                    <h3>Japan</h3>
+                                    <h4>10 Popular Places</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-33 col-st-75 margin-auto-mobile col-s-100">
+                            <div class="tour tour-img2">
+                                <div class="tour-top">
+                                    <span>Indonesia</span>
+                                </div>
+                                <div class="tour-bot">
+                                    <h3>Indonesia</h3>
+                                    <h4>10 Popular Places</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-33 col-st-75 margin-auto-mobile col-s-100">
+                            <div class="tour tour-img3">
+                                <div class="tour-top">
+                                    <span>Spain</span>
+                                </div>
+                                <div class="tour-bot">
+                                    <h3>Spain</h3>
+                                    <h4>10 Popular Places</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- explore the World -->
+            <section class="explore">
+                <div class="container">
+                    <div class="feature-heading">
+                        <h2>
+                            Explore The World
+                        </h2>
+                        <p>
+                            10,788 beautiful places to go
+                        </p>
+                        <span class="top-tour-icon explore-icon">
+                            <span href="#"><i class="fa-solid fa-angle-left"></i></span>
+                            <span href="#"><i class="fa-solid fa-angle-right"></i></span>
+                        </span>
+                    </div>
+                    <div class="explore-list">
+                        <div div class="explore-cart margin-auto-tablet margin-auto-mobile">
+                            <img src="./img/explore1.png" alt="">
+                            <div class="explore-evalueate">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.91</span>
+                                <span class="explore-slim">(147)</span>
+                            </div>
+                            <h3>Comfort Space</h3>
+                            <h4>1.2 km to Town Center</h4>
+                            <div class="explore-location">
+                                    <i class="fa-sharp fa-regular fa-building"></i>
+                                    <span>Turkey, Mamaris</span>
+                            </div>
+                            <div class="explore-location">
+                                <i class="fa-sharp fa-regular fa-building"></i>
+                                <span>Rooms available: 375</span>
+                            </div>
+                            <span  class="explore-price">$210</span>
+                        </div>
+                        <div div class="explore-cart margin-auto-tablet margin-auto-mobile">
+                            <img src="./img/explore2.png" alt="">
+                            <div class="explore-evalueate">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.91</span>
+                                <span class="explore-slim">(147)</span>
+                            </div>
+                            <h3>Comfort Space</h3>
+                            <h4>1.2 km to Town Center</h4>
+                            <div class="explore-location">
+                                    <i class="fa-sharp fa-regular fa-building"></i>
+                                    <span>Turkey, Mamaris</span>
+                            </div>
+                            <div class="explore-location">
+                                <i class="fa-sharp fa-regular fa-building"></i>
+                                <span>Rooms available: 375</span>
+                            </div>
+                            <span  class="explore-price">$210</span>
+                        </div>
+
+                        <div div class="explore-cart margin-auto-tablet margin-auto-mobile">
+                            <img src="./img/explore1.png" alt="">
+                            <div class="explore-evalueate">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.91</span>
+                                <span class="explore-slim">(147)</span>
+                            </div>
+                            <h3>Comfort Space</h3>
+                            <h4>1.2 km to Town Center</h4>
+                            <div class="explore-location">
+                                    <i class="fa-sharp fa-regular fa-building"></i>
+                                    <span>Turkey, Mamaris</span>
+                            </div>
+                            <div class="explore-location">
+                                <i class="fa-sharp fa-regular fa-building"></i>
+                                <span>Rooms available: 375</span>
+                            </div>
+                            <span  class="explore-price">$210</span>
+                        </div>
+
+                        <div div class="explore-cart margin-auto-tablet margin-auto-mobile">
+                            <img src="./img/explore2.png" alt="">
+                            <div class="explore-evalueate">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.91</span>
+                                <span class="explore-slim">(147)</span>
+                            </div>
+                            <h3>Comfort Space</h3>
+                            <h4>1.2 km to Town Center</h4>
+                            <div class="explore-location">
+                                    <i class="fa-sharp fa-regular fa-building"></i>
+                                    <span>Turkey, Mamaris</span>
+                            </div>
+                            <div class="explore-location">
+                                <i class="fa-sharp fa-regular fa-building"></i>
+                                <span>Rooms available: 375</span>
+                            </div>
+                            <span  class="explore-price">$210</span>
+                        </div>
+                            
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- trending cities -->
+            <section class="trending-cities">
+                <div class="container">
+                    <div class="trending-heading">
+                        <h2>
+                            Trending cites
+                        </h2>
+                        <p>
+                            The most searched for cities on TripGuide
+                        </p>
+                    </div>
+                    <div class="trending-list">
+                        <div class="trending-cart">
+                            <img src="./img/trend1.png" alt="">
+                            <div class="trending-content">
+                                <h3>Manila</h3>
+                                <!-- ***** -->
+                                <div class="explore-evalueate treding-no-margin">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>4.91</span>
+                                    <span class="explore-slim">(147)</span>
+                                </div>
+                                <div class="trending-price">
+                                    <span>$250.000</span>
+                                    <span>/night</span>
+                                </div>
+                                <div class="trending-btn">
+                                    <button>Buy now</button>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="trending-cart">
+                            <img src="./img/trend2.png" alt="">
+                            <div class="trending-content">
+                                <h3>Manila</h3>
+                                <!-- ***** -->
+                                <div class="explore-evalueate treding-no-margin">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>4.91</span>
+                                    <span class="explore-slim">(147)</span>
+                                </div>
+                                <div class="trending-price">
+                                    <span>$250.000</span>
+                                    <span>/night</span>
+                                </div>
+                                <div class="trending-btn">
+                                    <button>Buy now</button>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="trending-cart">
+                            <img src="./img/trend3.png" alt="">
+                            <div class="trending-content">
+                                <h3>Manila</h3>
+                                <!-- ***** -->
+                                <div class="explore-evalueate treding-no-margin">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>4.91</span>
+                                    <span class="explore-slim">(147)</span>
+                                </div>
+                                <div class="trending-price">
+                                    <span>$250.000</span>
+                                    <span>/night</span>
+                                </div>
+                                <div class="trending-btn">
+                                    <button>Buy now</button>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="trending-cart">
+                            <img src="./img/trend4.png" alt="">
+                            <div class="trending-content">
+                                <h3>Manila</h3>
+                                <!-- ***** -->
+                                <div class="explore-evalueate treding-no-margin">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>4.91</span>
+                                    <span class="explore-slim">(147)</span>
+                                </div>
+                                <div class="trending-price">
+                                    <span>$250.000</span>
+                                    <span>/night</span>
+                                </div>
+                                <div class="trending-btn">
+                                    <button>Buy now</button>
+                                </div>
+                            </div>
+                        </div>                       
+                        <div class="trending-cart">
+                            <img src="./img/trend5.png" alt="">
+                            <div class="trending-content">
+                                <h3>Manila</h3>
+                                <!-- ***** -->
+                                <div class="explore-evalueate treding-no-margin">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>4.91</span>
+                                    <span class="explore-slim">(147)</span>
+                                </div>
+                                <div class="trending-price">
+                                    <span>$250.000</span>
+                                    <span>/night</span>
+                                </div>
+                                <div class="trending-btn">
+                                    <button>Buy now</button>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="trending-cart">
+                            <img src="./img/trend6.png" alt="">
+                            <div class="trending-content">
+                                <h3>Manila</h3>
+                                <!-- ***** -->
+                                <div class="explore-evalueate treding-no-margin">
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>4.91</span>
+                                    <span class="explore-slim">(147)</span>
+                                </div>
+                                <div class="trending-price">
+                                    <span>$250.000</span>
+                                    <span>/night</span>
+                                </div>
+                                <div class="trending-btn">
+                                    <button>Buy now</button>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- travel your passion -->
+            <section class="travel-passion">
+                <div class="container">
+                    <div class="feature-heading">
+                        <h2>
+                            Travel Your Passion
+                        </h2>
+                        <p>
+                            Most Brilliant reasons Entrada should be your one-stop-shop!
+                        </p>
+                    </div>
+                    <!-- them class owl-carousel chưa thành công-->
+                    <div class="travel-list">
+                        <div class="travel-cart margin-auto-tablet margin-auto-mobile ">
+                            <!-- them img
+                            <img src="./img/travel-beach.jpg" alt=""> -->
+                            <h3>Beach Hobby</h3>
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.8 (122 reviews)</p>
+                            </span>
+                        </div>
+                        <div class="travel-cart margin-auto-tablet margin-auto-mobile">
+                            <h3>City Tours</h3>
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.8 (122 reviews)</p>
+                            </span>
+                        </div>
+                        <div class="travel-cart margin-auto-tablet margin-auto-mobile">
+                            <h3>Hiking Trips</h3>
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.8 (122 reviews)</p>
+                            </span>
+                        </div>
+                        <div class="travel-cart margin-auto-tablet margin-auto-mobile">
+                            <h3>Sports Trips</h3>
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.8 (122 reviews)</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- get our pro offers -->
+            <section class="get-offers">
+                <div class="container">
+                    <div class="offer">
+                        <div class="row">
+                            <div class="col col-50 col-m-100 col-s-100">
+                                <div class="offer-left">
+                                    <h3>Get our pro offers </h3>
+                                    <p>Create a visual identity for your company, and an overall brand</p>
+                                </div>
+                            </div>
+                            <div class="col col-50 col-m-100 col-s-100">
+                                <div class="offer-right">
+                                    <div class="offer-right-content">
+                                        <input type="text" placeholder="Type your email here" id="offer-input">
+                                        <button>Subcribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./img/Ellipse1.png" alt="" class="ellipse1">
+                        <img src="./img/ellipse2.png" alt="" class="ellipse2">
+                        <img src="./img/Ellipse3.png" alt="" class="ellipse3">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-container">
+                    <div class="row">
+                        <div class="col col-40 col-m-50 col-s-100 order-2">
+                            <div class="footer-issue">
+                                <div class="header-left footer-margin">
+                                    <img src="./img/Subtract.png" alt="">
+                                    <span> TripGuide</span>
+                                </div>
+                                <p>
+                                    This is the team that specializes in <br>
+                                    making sure in the find it a <br>
+                                    your interior looks cool 
+                                </p>
+                                <div class="day-night-layout">
+                                    <button><i class="fa-solid fa-sun"></i></button>
+                                    <button><i class="fa-solid fa-moon"></i></button>                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-20 col-m-50 col-s-100 order-1">
+                            <div class="footer-content">
+                                <h3>Services</h3>
+                                <ul class="footer-list">
+                                    <li><a href="">Travel Booking</a></li>
+                                    <li><a href="">Flight Booking</a></li>
+                                    <li><a href="">Car Booking</a></li>
+                                    <li><a href="">Fivestar Hotel</a></li>
+                                    <li><a href="">Traveling</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col col-20 col-m-50 col-s-100 order-1">
+                            <div class="footer-content">
+                                <h3>Supports</h3>
+                                <ul class="footer-list">
+                                    <li><a href="">Account</a></li>
+                                    <li><a href="">Legal</a></li>
+                                    <li><a href="">Contact</a></li>
+                                    <li><a href="">Terms & Condition</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col col-20 col-m-50 col-s-100 order-1">
+                            <div class="footer-content no-border-bottom">
+                                <h3>Business</h3>
+                                <ul class="footer-list">
+                                    <li><a href="">Success</a></li>
+                                    <li><a href="">About Locato</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Information</a></li>
+                                    <li><a href="">Travel Guide</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- js -->
+    <script src="./javascript.js"></script>
+</body>
+</html>
