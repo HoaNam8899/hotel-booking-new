@@ -13,8 +13,5 @@
 // var x = window.matchMedia("(max-width: 416px)")
 // setPlacehoder(x) // Call listener function at run time
 // x.addListener(setPlacehoder) // Attach listener function on state changes
-
-
-
-
 // lấy chiều ngang màng hình rồi dùng để thay đổi placeholder
+

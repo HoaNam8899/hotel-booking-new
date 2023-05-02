@@ -194,14 +194,13 @@
         position: relative;
         border-bottom: 1px solid #E7ECF3;
     }
-    /* .traffic span::after{
-        content: "";
-        display: inline-block;
-        position: absolute;
-        bottom: 0;
-        border-bottom: 5px solid #3B71FE;
-        
-    } */
+    .traffic span{
+        border-bottom: 2px solid transparent;
+    }
+    .traffic span:hover{
+        border-color:  #3B71FE;
+    }
+
     .booking{
         display: flex;
         align-items: center;

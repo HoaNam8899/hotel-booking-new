@@ -149,7 +149,7 @@ header{
     padding-bottom: 28px;
     cursor: pointer;
 } 
-.traffic span:active{  
+.traffic span:hover{  
     color: var(--color-3b3e);
     border-bottom: 2px solid #3B71FE;
 }
