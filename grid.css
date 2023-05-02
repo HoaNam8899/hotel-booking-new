@@ -187,6 +187,9 @@
         bottom: 0;
         transform: none;
     } 
+    .feature-heading{
+        text-align: center;
+    }
     .traffic{
         display: flex;
         align-items: center;
