@@ -62,6 +62,9 @@
     .container{
         width: 960px;
     }
+    .traffic span{
+        margin-right: 25px;
+    }
     .search-place-grid{
         grid-template-columns: repeat(3,1fr);
         /* display: inline-block; */
@@ -72,6 +75,9 @@
     }
     .travel-list{
         grid-template-columns: repeat(2,1fr);
+    }
+    .travel-cart{
+        width: 80%;
     }
 }
 @media (max-width:768px){
@@ -106,9 +112,14 @@
     }
 
     
-
+    .form-search{
+        padding: 30px 40px;
+    }
     .baner-caption h2{
         top: 165px;
+    }
+    .booking span {
+        margin-left: 20px;
     }
     .booking span h4{
         font-size: 14px;
@@ -179,7 +190,7 @@
     .traffic{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         position: relative;
         border-bottom: 1px solid #E7ECF3;
     }
@@ -452,7 +463,9 @@
         padding: 12px 20px;
         margin: 0;
     }
-    
+    .offer-right-content input[type="text"]::placeholder{
+        content: "Your email";
+    }
     /* ******* */
 
     footer{
@@ -514,5 +527,7 @@
         display: none;
     }
         /* ******* */
-    
+    .traffic i {
+        margin-right: 2px;
+    }   
 }
