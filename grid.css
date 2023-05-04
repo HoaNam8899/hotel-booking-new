@@ -53,6 +53,7 @@
     width: 100%;
 }
 @media (max-width:1024px){
+    footer,
     #body{
         width: 1024px;
     }
@@ -82,6 +83,7 @@
 }
 @media (max-width:768px){
     /* col-m */
+    footer,
     #body{
         width: 768px;
     }
@@ -151,6 +153,7 @@
 }
 @media (max-width:600px) {
     /* col-st */
+    footer,
     #body{
         width:600px;
     }
@@ -240,6 +243,7 @@
 }
 @media (max-width: 415px){
     /* col-s */
+    footer,
     #body{
         width: 375px;
     }
